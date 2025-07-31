@@ -1,0 +1,192 @@
+# 🐱🐶 Classification Chats/Chiens - Projet Complet
+
+# ============================================================================
+# ENVIRONNEMENTS VIRTUELS & PACKAGES
+# ============================================================================
+
+# Backend Python
+Backend/venv/
+Backend/env/
+Backend/__pycache__/
+Backend/*.pyc
+Backend/*.pyo
+Backend/*.pyd
+Backend/build/
+Backend/dist/
+Backend/*.egg-info/
+
+# Frontend Node.js
+FrontEnd/cat-dog-classifier/node_modules/
+FrontEnd/cat-dog-classifier/.next/
+FrontEnd/cat-dog-classifier/build/
+FrontEnd/cat-dog-classifier/dist/
+FrontEnd/cat-dog-classifier/.nuxt/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================================================
+# MODÈLES & DONNÉES (FICHIERS LOURDS)
+# ============================================================================
+
+# Modèles PyTorch entraînés
+Backend/*.pth
+Backend/*.pkl
+Backend/*.pt
+Backend/*.bin
+Backend/best_cnn_model*
+Backend/model_checkpoints/
+Backend/saved_models/
+
+# Dataset d'images (trop volumineux)
+Backend/data/
+Backend/dataset/
+Backend/images/
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.bmp
+**/*.tiff
+**/*.webp
+
+# Sauf images exemple pour documentation
+!docs/images/
+!examples/images/
+!README_images/
+
+# Cache données
+Backend/*.npy
+Backend/*.npz
+Backend/*.h5
+Backend/*.hdf5
+
+# ============================================================================
+# LOGS & RÉSULTATS
+# ============================================================================
+
+# Logs d'entraînement
+Backend/logs/
+Backend/*.log
+Backend/training_logs/
+Backend/tensorboard_logs/
+Backend/wandb/
+
+# Résultats expérimentaux
+Backend/results/
+Backend/outputs/
+Backend/experiments/
+Backend/checkpoints/
+
+# ============================================================================
+# DÉVELOPPEMENT
+# ============================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# SYSTÈME
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================================================
+# SECRETS & CONFIG
+# ============================================================================
+
+# Variables d'environnement
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# Clés API & secrets
+secrets/
+keys/
+*.key
+*.pem
+api_keys.txt
+config_local.*
+
+# ============================================================================
+# DÉPLOIEMENT
+# ============================================================================
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Cloud
+.serverless/
+.vercel/
+.netlify/
+
+# ============================================================================
+# TEMPORAIRES
+# ============================================================================
+
+# Fichiers temp
+*.tmp
+*.temp
+temp/
+tmp/
+*.backup
+*.bak
+*.orig
+
+# Debug
+debug_*.py
+test_*.py
+scratch.*
+playground.*
+
+# ============================================================================
+# COMMENTAIRES PROJET
+# ============================================================================
+
+# 📁 STRUCTURE IGNORÉE:
+# Backend/venv/     → Environment Python (à recréer avec requirements.txt)
+# Backend/data/     → Dataset (partager via drive/kaggle)
+# Backend/*.pth     → Modèles (partager via Hugging Face Hub)
+# Frontend/node_modules/ → Dépendances (npm install)
+
+# 🔐 SÉCURITÉ:
+# .env → Variables sensibles (créer .env.example)
+# *.key → Clés privées (jamais commiter)
+
+# 🚀 PARTAGE:
+# README.md → Instructions complètes
+# requirements.txt → Dépendances Python
+# package.json → Dépendances Node.js

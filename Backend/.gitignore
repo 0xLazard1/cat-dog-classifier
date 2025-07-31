@@ -1,0 +1,225 @@
+# 🐱🐶 Classification Chats/Chiens - GitIgnore
+
+# ============================================================================
+# ENVIRONNEMENTS VIRTUELS & PACKAGES
+# ============================================================================
+
+# Environment virtuel Python
+venv/
+env/
+ENV/
+.venv/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Conda environments
+.conda/
+
+# ============================================================================
+# MODÈLES ENTRAÎNÉS & DONNÉES
+# ============================================================================
+
+# Modèles PyTorch (fichiers lourds)
+*.pth
+*.pkl
+*.pt
+*.bin
+best_cnn_model*
+model_checkpoints/
+saved_models/
+
+# Données d'entraînement (trop volumineuses pour Git)
+data/
+dataset/
+images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Fichiers de cache données
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# ============================================================================
+# LOGS & MONITORING
+# ============================================================================
+
+# Logs d'entraînement
+logs/
+*.log
+training_logs/
+tensorboard_logs/
+wandb/
+
+# Résultats et métriques
+results/
+outputs/
+experiments/
+checkpoints/
+
+# ============================================================================
+# DÉVELOPPEMENT & DEBUG
+# ============================================================================
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE & Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ============================================================================
+# SYSTÈME & OS
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================================================
+# DÉPLOIEMENT & PRODUCTION
+# ============================================================================
+
+# Variables d'environnement sensibles
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# Secrets & clés API
+secrets/
+keys/
+*.key
+*.pem
+api_keys.txt
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# ============================================================================
+# CACHE & TEMPORAIRES
+# ============================================================================
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache pip
+.pip-cache/
+
+# Cache pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Cache mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Fichiers temporaires
+*.tmp
+*.temp
+temp/
+tmp/
+
+# ============================================================================
+# OUTILS DE DÉVELOPPEMENT
+# ============================================================================
+
+# Testing
+.tox/
+.coverage
+.pytest_cache/
+htmlcov/
+.nox/
+
+# Profiling
+*.prof
+
+# Documentation générée
+docs/_build/
+docs/build/
+site/
+
+# ============================================================================
+# SPÉCIFIQUE AU PROJET
+# ============================================================================
+
+# Scripts de debug temporaires
+debug_*.py
+test_*.py
+scratch.py
+playground.py
+
+# Sauvegardes
+*.backup
+*.bak
+*.orig
+
+# Fichiers de configuration locale
+config_local.py
+settings_local.py
+
+# ============================================================================
+# COMMENTAIRES POUR L'ÉQUIPE
+# ============================================================================
+
+# ⚠️  IMPORTANT: 
+# - Les modèles (*.pth, *.pkl) sont ignorés car trop lourds pour Git
+# - Les données (data/) sont ignorées - utilisez Git LFS si nécessaire
+# - Les logs sont ignorés - utilisez un service de monitoring en prod
+# - Les secrets (.env) sont TOUJOURS ignorés pour la sécurité
+
+# 💡 POUR PARTAGER:
+# - Modèles → Hugging Face Hub / Google Drive / S3
+# - Données → Dataset public / partage sécurisé
+# - Config → Utilisez des variables d'environnement
+
+# 🚀 POUR LE DÉPLOIEMENT:
+# - Créez un .env.example avec les variables nécessaires
+# - Documentez les secrets requis dans le README
+# - Utilisez des services de gestion des secrets en production

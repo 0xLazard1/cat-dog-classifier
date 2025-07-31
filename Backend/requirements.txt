@@ -1,0 +1,13 @@
+numpy
+scikit-image
+Pillow
+fastapi
+uvicorn[standard]
+python-multipart
+opencv-python
+matplotlib
+tqdm
+scikit-learn
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio
