@@ -4,6 +4,8 @@
 # ENVIRONNEMENTS VIRTUELS & PACKAGES
 # ============================================================================
 
+.claude
+
 # Backend Python
 Backend/venv/
 Backend/env/
