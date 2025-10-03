@@ -78,12 +78,6 @@ Dense(256) -> ReLU -> Dropout
 Dense(1) -> Sigmoid
 ```
 
-### **Optimisations Apple Silicon**
-- ✅ **MPS Backend**: Utilisation MPS MACBOOK PRO M4
-- ✅ **Memory Pinning**: Transferts CPU↔GPU optimisés
-- ✅ **Batch Processing**: Support images multiples
-- ✅ **Mixed Precision**: Float32 optimisé
-
 ## 📁 **Structure projet**
 
 ```
