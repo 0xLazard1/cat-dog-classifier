@@ -1,4 +1,4 @@
-# 🐱🐶 Classification Chats/Chiens - PyTorch CNN
+# Classification Chats/Chiens - PyTorch CNN
 
 API FastAPI avec CNN PyTorch optimisé pour Apple Silicon (M4) pour classifier des images de chats et chiens.
 
@@ -148,21 +148,6 @@ curl http://localhost:8000/model-info
 | `Prédictions identiques` | Relancez `python setup_model.py` |
 | `Memory error` | Réduisez batch_size dans train_pytorch.py |
 
-## 📈 **Métriques de développement**
 
-- **Temps d'entraînement**: ~15-30 min (M4 GPU)
-- **Taille modèle**: ~100-200 MB
-- **RAM requise**: ~1-2 GB (API + modèle)
-- **Throughput**: ~50-100 images/seconde
-
-## 🎯 **Prochaines étapes**
-
-1. **Améliorer accuracy**: Transfer learning (ResNet, EfficientNet)
-2. **Optimiser vitesse**: Quantization, ONNX export
-3. **Étendre classes**: Plus d'animaux domestiques
-4. **Deploy cloud**: Docker + Cloud Run / Railway
-5. **Monitoring**: Logging, métriques Prometheus
-
----
 
 **🚀 Développé avec PyTorch + FastAPI**
